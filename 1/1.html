@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="light">
+    <div class="container">
+        <header>
+            <div class="up">
+                <p style="color: white;">TODO</p>
+                <button id="switch"><img id ="icon" src="./images/icon-moon.svg"></button>
+            </div>
+            <div class="add-btn light-ba">
+                <input class="text" type="text" placeholder="create a new to do..." autocomplete="off" >
+                <button id="add" onclick="addItem()"></button>
+            </div>
+        </header>
+        <main >
+            <ul class='todos light-ba'>
+
+            </ul>
+            <div class="sub">
+                <span class="left"></span>
+                <div class="control">
+                    <button id="clear">clear</button>
+                    <button id=completed>completed</button>
+                </div>
+            </div>
+           
+        </main>
+        <footer class="ligt-ba">
+            <button id='all'>All</button>
+            <button id ='active'>Active</button>
+            <button id="complete-btn">Completed</button>
+
+        </footer>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>

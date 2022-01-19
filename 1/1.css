@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    font-family:Josefin Sans;
+}
+.light{
+    background-color: white;
+    background-image: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    color:black
+}
+.light-ba{
+    background-color: white;
+    color: black;
+}
+.dark-ba{
+    background-color:#465461;
+    box-sizing: border-box;
+    color: white;
+}
+.dark{
+    background-color: #2b2b3a;
+    background-image: url("./images/bg-desktop-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    color:white;
+}
+
+input, button{
+    background-color: transparent;
+    border: 0px transparent;
+    font-family:Josefin Sans ;
+    
+}
+input:focus, button:focus{
+    outline: 0;
+}
+.container{
+    width: 50%;
+    margin: auto;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30%;
+    padding:1rem;
+    font-size: 2rem;
+    font-family:Josefin Sans ;
+}
+.add-btn{
+    padding: 1rem;
+    border-radius: .3rem;
+    font-family:Josefin Sans ;
+}
+.text{
+    width: 95%;
+    font-family:Josefin Sans ;
+}
+main{
+    margin-top: 3rem;
+    box-shadow: 1px 1px 10px 1px #414040;
+    font-family:Josefin Sans ;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem;
+    border-bottom: 1px solid #cacaca;
+    font-family:Josefin Sans ;
+   
+}
+.before::before{
+    content:'';
+    background-image: url('./images/icon-check.svg'),linear-gradient(to bottom right, rgb(15, 121, 221), rgb(123, 74, 179),rgb(255, 255, 255));;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border:1px solid #cacaca ;
+    background-position: center;
+    padding:1px 8px;
+    margin-right: 1%;
+}
+.checked{
+    text-decoration: line-through;
+    margin-left: 1%;
+    width: 90%;
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+    font-family:Josefin Sans ;
+}
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    padding: .6rem;
+    box-shadow: 1px 1px 10px 1px #414040;
+    font-family:Josefin Sans ;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 500px){
+    .container{
+        width: 80%;
+      margin:50% auto
+    }
+    .text{
+       width: 89%;
+    }
+}
+
+
