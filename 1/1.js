@@ -61,23 +61,18 @@ function addItem(){
     li.appendChild(cross)
     ul.appendChild(li)
     let liCount= document.querySelectorAll('li').length
-    //console.log(liCount);
-    let temp = liCount
-     console.log(temp);
+    console.log(liCount)
     //console.log(liCount)
     itemLeft.innerText = `${liCount} items left`
     li.addEventListener('click', e=>{
       //   console.log(e.target);
       if(e.target===span){
         span.classList.add('before')
-        checkedItem=span.classList.add('checked')
-        console.log(temp)
-        let index= temp-1
-        console.log(index);
-        itemLeft.innerText = `${index} items left`
-        temp = temp-1
-        console.log(temp);
-
+        span.classList.add('checked')
+        checkedItem = document.querySelectorAll('.checked').length
+        let liTags = document.querySelectorAll('li').length
+        let result = liTags-checkedItem
+        itemLeft.innerText = `${result} items left`
       }
     })
     cross.addEventListener("click" , e=>{
